@@ -11,7 +11,7 @@
     "require": {
         "php": ">=7.2|^8.0",
         "ext-gd": "*",
-        "bacon/bacon-qr-code": "^2.8"
+        "bacon/bacon-qr-code": "^2.0.8"
     },
     "require-dev": {
         "mockery/mockery": "~1",
