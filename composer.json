@@ -1,0 +1,38 @@
+{
+    "name": "sandbox-dev/laravel-qrcode",
+    "description": "Laravel QrCode Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sandbox"
+        }
+    ],
+    "require": {
+        "php": ">=7.2|^8.0",
+        "ext-gd": "*",
+        "bacon/bacon-qr-code": "^2.8"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1",
+        "phpunit/phpunit": "~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sandbox\\QrCode\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sandbox\\QrCode\\QrCodeServiceProvider"
+            ],
+            "aliases": {
+                "QrCode": "Sandbox\\QrCode\\Facades\\QrCode"
+            }
+        }
+    }
+}
